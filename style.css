@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* 1. [ESTILIZAÇÃO GERAL] */
+
+/* 1.1. [ESTILIZAÇÃO GERAL] > geral */
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #000005;
+    color: #FFF;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 1. [ESTILIZAÇÃO DA INDEX] */
+
+/* 2.1. [ESTILIZAÇÃO DA INDEX] > Geral */
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2.2. [ESTILIZAÇÃO DA INDEX] > Header */
+
+.header {
+    width: 100vw;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > a > img {
+    width: 70px;
+    height: 70px;
+}
+
+.email {
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email > p {
+    font-size: 15px;
+}
+
+.email > p >i {
+    font-size: 15px;
+    color: #40D0D0;
+}
+
+.menu-idioma {
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-idioma > img {
+    width: 25px;
+    height: 25px;
+}
+
+.menu-superior {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-superior > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-superior > ul > li {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.menu-superior > ul > li > a > i {
+    margin-right: 4px;
+}
+
+
+/* 2.3. [ESTILIZAÇÃO DA INDEX] > Main */
+
+/* 2.3.1 [ESTILIZAÇÃO DA INDEX] > Main > Principal */
+
+.main {
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-lateral {
+    width: 10vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-lateral > a > i {
+    font-size: 50px;
+}
+
+.menu-lateral > a > i:hover {
+    color: #40D0D0;
+}
+
+.left-main {
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.esfera {
+    width: 360px;
+    height: 200px;
+    background-color: transparent;
+    border: 4px solid rgba(64, 208, 208, 0.2);
+    border-radius: 50%;
+    transform: rotate3d(-1, -1, -1, 35deg);
+    transform-origin: center center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    margin-top: -100px;
+    margin-left: -180px;
+}
+
+.left-main > p {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+#csi {
+    margin-left: -170px;
+}
+
+#csii {
+    font-size: 30px;
+    font-weight: bold;
+    color: #40D0D0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #40D0D0;
+    animation: digitar 5s steps(20, end) forwards, piscarCursor 0.5s infinite;
+}
+
+@keyframes digitar {
+    0% { width: 0; }
+    100% { width: 100%; border-right: none; }
+}
+
+@keyframes piscarCursor {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #40D0D0; }
+}
+
+#csiii {
+    margin-left: -50px;
+}
+
+.left-main > button {
+    width: 250px;
+    height: 35px;
+    border: 2px solid #40D0D0;
+    color: #FFF;
+    border-radius: 7px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px #40D0D0;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.left-main > button:hover {
+    background-color: #40D0D0;
+    border: none;
+    box-shadow: 0px 2px 2px #40D0D0;
+}
+  
+  .button:focus {
+    outline: none;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button:hover {
+    box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+.right-main {
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#avatar {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right-main > img {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.right-main > p {
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+}
+
+/* 2.3.2 [ESTILIZAÇÃO DA INDEX] > Main > Portifílio */
+
+.main-portifolio {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.slider {
+    width: 70vw;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    text-align: justify;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+    color: #000005;
+}
+
+.item > p {
+    font-size: 15px;
+}
+
+.item > h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.item > img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.item > a {
+    text-align: center;
+}
+
+.item > a > p > i {
+    color: #40D0D0;
+    font-weight: bold;
+}
+
+.item > a > p:hover {
+    color: #40D0D0;
+}
+
+#next, #prev {
+    position: absolute;
+    top: 40%;
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 150px;
+}
+
+#next {
+    left: unset;
+    right: 50px;
+}
+
+/* 2.3.2 [ESTILIZAÇÃO DA INDEX] > Main > Curriculo */
+
+.main-curriculo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(64, 208, 208, 0.2);
+}
+
+.left-apresentacao {
+    width: 45vw;
+    height: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+}
+
+.left-apresentacao > p, .right-apresentacao > p {
+    font-size: 15px;
+}
+
+.right-apresentacao {
+    width: 45vw;
+    height: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #40D0D0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #FFF;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.container-timeline {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.container-timeline > img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #FFF;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #000005;
+    text-align: justify;
+}
+
+.left-timeline {
+    left: -8.3%;
+}
+
+.right-timeline {
+    left: 50%;
+}
+
+.right-timeline > img {
+    left: -20px;
+}
+
+.text-box > small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-timeline-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #FFF;
+    right: -15px;
+}
+
+.right-timeline-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #FFF;
+    left: -14.8px;
+}
+
+.habilidades {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    gap: 50px;
+}
+
+.habilidades > h1, .skill-container > h1 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    box-shadow: 0px 3px 4px #40D0D0;
+    margin-bottom: 50px;
+}
+
+.idiomas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.ingles, .espanhol {
+    width: 200px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #FFF;
+}
+
+.ingles:hover, .espanhol:hover {
+    border: 2px solid #40D0D0;
+    background-size: cover;
+    background-position: center;
+}
+
+.ingles:hover {
+    background-image: url(midia/bandeiraeua-img.webp);
+}
+
+.espanhol:hover {
+    background-image: url(midia/bandeiraespanha-img.webp);
+}
+
+.barra {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.progresso {
+    height: 100%;
+    background-color: #40D0D0;
+    border-radius: 10px;
+}
+
+.ingles > p, .espanhol > p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.skill-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill {
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #FFF;
+}
+
+.skill:hover {
+    border: 2px solid #40D0D0;
+}
+
+.skill > p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.skill > img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-contatos {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contatos {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgba(64, 208, 208, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+}
+
+.contato > i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.contato > div {
+    text-align: left;
+}
+
+.contato > div > p {
+    margin: 5px 0;
+}
+
+
+.contato > p {
+    font-size: 15px;
+    color: #40D0D0;
+}
+
+/* 2.4. [ESTILIZAÇÃO DA INDEX] > Footer */
+
+.footer {
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos > p {
+    font-size: 15px;
+}
+
+.autor {
+    color: #40D0D0;
+    font-weight: bold;
+}
+
+/* 3. [RESPONSIVIDADE] */
+
+@media only screen and (max-width: 900px) {
+
+    /* ITENS QUE NÃO APARECERÃO NO MODO RESPONSIVO */
+
+    .logo, .email, .menu-lateral, .esfera, #seta {
+        display: none;
+    }
+
+    /* AJUSTES PARA RESPONSIVIDADE */
+
+    body {
+        overflow-y: auto;
+    }
+
+    .header {
+        height: 10vh;
+        gap: 10px;
+    }
+
+    .menu-idioma {
+        height: 10vh;
+        width: 20vw;
+        gap: 5px;
+        margin-left: 15px;
+    }
+    
+    .menu-idioma > a > img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .menu-superior {
+        width: 80vw;
+        height: 10vh;
+    }
+    
+    .menu-superior > ul {
+        gap: 10px;
+    }
+
+    .menu-superior > ul > li {
+        font-size: 12px;
+    }
+    
+    .menu-superior > ul > li > a > i {
+        margin-right: 2px;
+    }
+
+    .main {
+        max-height: 80vh;
+        margin-top: 0;
+        margin-bottom: 10vh;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-main {
+        height: auto;
+        position: relative;
+    }
+
+    .right-main {
+        height: auto;
+        position: relative;
+        order: -1;
+    }
+
+    .right-main > p {
+        width: 100vw;
+        font-size: 20px;
+        text-align: center;
+        top: 0;
+        left: 0;
+    }
+
+    #csi {
+        width: 100vw;
+        font-size: 20px;
+        margin-left: 0;
+    }
+    
+    #csii {
+        width: 100vw;
+        font-size: 23px;
+        font-weight: bold;
+        color: #40D0D0;
+        animation: none;
+    }
+    
+    #csiii {
+        width: 100vw;
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    #avatar {
+        width: 300px;
+        height: 300px;
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .right-main > img, .right-main > p {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .main-portifolio {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    
+    .slider {
+        width: 70vw;
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .item {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 150px;
+        height: 620px;
+        text-align: justify;
+        background-color: #FFF;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.5s;
+        left: calc(50% - 110px);
+        top: 0;
+        color: #000005;
+    }
+    
+    .item > img {
+        width: 150px;
+    }
+    
+    #next, #prev {
+        position: absolute;
+        left: -8px;
+    }
+    
+    #next {
+        left: unset;
+        right: -8px;
+    }
+    
+    .apresentacao {
+        border-radius: 0;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-apresentacao, .right-apresentacao {
+        width: 80%;
+        padding: 0;
+        text-align: justify;
+    }
+    
+    .timeline {
+        margin: 50px auto;
+    }
+    
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .container-timeline {
+        width: 70%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    
+    .container-timeline > img { /**/
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        right: -20px;
+        top: 32px;
+        background-color: #FFF;
+        z-index: 10;
+    }
+    
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+    
+    .left-timeline {
+        left: 0%;
+    }
+    
+    .right-timeline {
+        left: 0;
+    }
+    
+    .right-timeline > img, .left-timeline > img {
+        left: 10px;
+    }
+    
+    .left-timeline-arrow, .right-timeline-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+    }
+
+    .habilidades > h1 {
+        text-align: center;
+    }
+    
+    .contatos {
+        width: 100vw;
+        border-radius: 0;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .contato {
+        margin-left: 20px;
+    }
+    
+    .footer {
+        min-height: 10vh;
+        position: relative;
+    }
+
+}
